@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/Proj.css">
+    <title>My Projects - Kirk Gibbs</title>
+</head>
+<body>
+    <!-- LOADING SCREEN -->
+    <div class="loading-screen">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- OVERLAY -->
+    <div class="overlay first"></div>
+    <div class="overlay second"></div>
+    <div class="overlay third"></div>
+
+    <!-- HEADER -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="nav__logo-container">
+                <a href="index.html" class="nav__logo">My Projects</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+                   
+                    <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <ion-icon name="menu"></ion-icon>
+            </div>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="l-main bd-grid">
+        <section class="projects">
+       
+            
+            <div class="project-container">
+                <!-- First Project -->
+                <div class="project">
+                    <div class="project__image">
+                        <img src="assets/img/fitness-app.jpg" alt="Fitness App">
+                    </div>
+                    <div class="project__details">
+                        <h2 class="project__title">Fitness App</h2>
+                        <p class="project__description">A mobile app designed to help users lose weight, eat healthier, and build better habits through personalized tracking and recommendations.</p>
+                        <a href="#" class="project__button">Coming Soon</a>
+                    </div>
+                </div>
+
+                <!-- Second Project -->
+                <div class="project">
+                    <div class="project__image">
+                        <img src="assets/img/RE.png" alt="Resident Evil Database">
+                    </div>
+                    <div class="project__details">
+                        <h2 class="project__title">Resident Evil Database</h2>
+                        <p class="project__description">A personal portfolio website showcasing my projects, skills, and experience in software development.</p>
+                        <a href="#" class="project__button">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+    
+    <!-- MAIN -->
+    <script src="assets/js/main.js"></script>
+    
+    <!-- ICONS -->
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+
+    <!-- LOADING SCREEN SCRIPT -->
+    <script>
+        window.addEventListener('load', () => {
+            const loadingScreen = document.querySelector('.loading-screen');
+            loadingScreen.style.display = 'none';  // Hide loading screen after page loads
+        });
+    </script>
+</body>
+</html>
